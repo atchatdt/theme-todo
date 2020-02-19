@@ -41,9 +41,9 @@ header {
   justify-items: center;
   align-items: center;
   padding: 10px 5px;
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  right: 0;
+  right: 0; */
   width: 100%;
 }
 
@@ -176,5 +176,5 @@ section.main-todo {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
