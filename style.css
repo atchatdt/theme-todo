@@ -9,17 +9,18 @@ body {
   font-size: 15px;
   min-width: 100vw;
   min-height: 100vh;
+    overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
   color: black;
 }
-a:active{
-    color: black;
+a:active {
+  color: black;
 }
-a:visited{
-    color: black;
+a:visited {
+  color: black;
 }
 ul {
   list-style: none;
@@ -144,8 +145,8 @@ header .right-header .my-user .menu-user ul li a {
   font-size: 15px;
 }
 /* header .right-header .my-user:hover .menu-user {
-  display: block !important;
-} */
+    display: block !important;
+  } */
 
 header .right-header .entertainment {
   width: 100px;
@@ -155,12 +156,25 @@ header .right-header .entertainment {
   justify-content: space-between;
 }
 
-header .right-header .notification{
-    justify-self: end;
+header .right-header .notification {
+  justify-self: end;
+  user-select: none;
 }
 /* End right header */
 
-
 /* Mid header */
-
+header .mid-header {
+  font-size: 25px;
+  user-select: none;
+}
 /* End mid header */
+
+/* Main todo */
+
+section.main-todo {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 60px;
+}
