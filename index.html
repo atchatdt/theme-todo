@@ -4,23 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container-fluid">
       <header>
-        <div class="left-header">Left</div>
+        <div class="left-header">
+            <a href="#">
+                <i class="fas fa-home"></i>
+            </a>
+            <div class="left-header-search">
+                <input type="text">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
         <div class="mid-header">
             <a href="#">Todo App</a>
         </div>
         <div class="right-header">
-          <div class="my-user">User</div>
-          <div class="entertainment">EN</div>
+            <div class="playing">abc</div>
+            <div class="entertainment">
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+          <div class="notification">
+            <i class="fas fa-bell"><sup id="notification-number">1</sup></i> 
+          </div>
+          <div class="my-user">
+              <img src="./images/user.png" alt="">
+              <div class="menu-user">
+                  <ul>
+                      <li class="user-name"><a href="#">kazuto</a></li>
+                      <li class="user-setting"><a href="#">setting</a></li>
+                      <li class="user-logout"><a href="#">logout</a></li>
+                  </ul>
+              </div>
+          </div>
         </div>
 
       </header>
     </div>
+    
     <script></script>
   </body>
 </html>
