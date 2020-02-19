@@ -1,3 +1,10 @@
+:root {
+  --add: #399449;
+  --doing: #e25555;
+  --report: #cc0d0d;
+  --final: #2b17d29c;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,8 +15,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   min-width: 100vw;
-  min-height: 100vh;
-    overflow-x: hidden;
+  min-height: auto;
+  overflow-x: hidden;
 }
 
 a {
@@ -29,8 +36,8 @@ ul {
   max-width: 1200px;
 }
 .container-fluid {
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100%;
+  /* min-height: 100vh; */
 }
 
 /* Header */
@@ -42,8 +49,8 @@ header {
   align-items: center;
   padding: 10px 5px;
   /* position: fixed;
-  top: 0;
-  right: 0; */
+        top: 0;
+        right: 0; */
   width: 100%;
 }
 
@@ -61,7 +68,6 @@ header .left-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* align-self: start; */
   justify-self: start;
 }
 header .left-header .left-header-search input {
@@ -120,6 +126,7 @@ header .right-header .my-user .menu-user {
   right: 5px;
   top: 50px;
   border: 1px solid #7b5d5d66;
+  z-index: 10;
 }
 
 header .right-header .my-user .menu-user ul {
@@ -144,9 +151,6 @@ header .right-header .my-user .menu-user ul li a {
   text-transform: capitalize;
   font-size: 15px;
 }
-/* header .right-header .my-user:hover .menu-user {
-    display: block !important;
-  } */
 
 header .right-header .entertainment {
   width: 100px;
@@ -172,9 +176,67 @@ header .mid-header {
 /* Main todo */
 
 section.main-todo {
-  width: 100vw;
-  height: 100vh;
+  width: 99%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* margin-top: 60px; */
+  grid-gap: 5px;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.main-todo .cart-todo {
+  width: 100%;
+  color: #fff;
+  margin: 5px 0;
+}
+.main-todo .todo-add .cart-todo {
+  background: var(--add);
+}
+
+.main-todo .todo-doing .cart-todo {
+  background: var(--doing);
+}
+
+.main-todo .todo-report .cart-todo {
+  background: var(--report);
+}
+
+.main-todo .todo-final .cart-todo {
+  background: var(--final);
+}
+
+.main-todo .title {
+  user-select: none;
+}
+
+.main-todo .title i {
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+}
+
+.main-todo .title-add {
+  color: var(--add);
+}
+.main-todo .title {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.main-todo .title-doing {
+  color: var(--doing);
+}
+.main-todo .title-report {
+  color: var(--report);
+}
+
+.main-todo .title-final {
+  color: var(--final);
+}
+
+.main-todo .cart-todo .cart-todo-title {
+  border-bottom: 2px solid #403f3f;
+  text-align: center;
 }
