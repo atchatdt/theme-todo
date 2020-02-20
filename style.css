@@ -75,7 +75,7 @@ header .header .left-header .left-header-search input {
   border-radius: 5px;
   padding: 6px;
   margin-left: 10px;
-  width: 260px;
+  width: 230px;
 }
 
 header .left-header .left-header-search input:focus {
@@ -260,20 +260,71 @@ header .header .right-header .my-user .menu-user ul li a {
 /* Menu mobile */
 
 .menu-mobile {
-  display: none;
-  background: #0095ff61;
-  width: 350px;
+  /* display: none!important; */
+  transform: translateX(-300px);
+  background: #026aa7e0;
+  width: 300px;
   z-index: 10;
   height: 100%;
   position: fixed;
+  z-index: 1000;
 }
 
+.menu-mobile .header-menu-mobile {
+  display: flex;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.menu-mobile .header-menu-mobile .title-menu-mobile {
+  font-size: 3rem;
+}
+
+.menu-mobile .header-menu-mobile .notification-menu-mobile {
+  margin-left: auto;
+  color: red;
+}
+
+.menu-mobile .header-mid-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-mobile .header-mid-menu-mobile .playing {
+  font-size: 1.3rem;
+}
+.menu-mobile .header-mid-menu-mobile .entertainment {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.menu-mobile .user-menu-mobile{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-menu-mobile{
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    display: none;
+    background: rgba(0,0,0,0.1);
+}
+
+.show-bg-menu-mobile{
+    display: block;
+}
 /* End menu mobile */
+
 /* responsive  */
 @media (max-width: 1092px) {
-  .menu-mobile {
-    display: block;
-  }
+
   header .header .right-header {
     display: none;
   }
@@ -284,6 +335,10 @@ header .header .right-header .my-user .menu-user ul li a {
   }
   .main-todo .cart-todo {
     font-size: 1.1rem;
+  }
+  .show-menu-mobile {
+    display: block;
+    transform: translateX(0px);
   }
 }
 
