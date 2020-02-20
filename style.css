@@ -144,6 +144,7 @@ header .header .right-header .playing {
 }
 header .header .i-menu-mobile {
   display: none;
+  z-index: 100;
 }
 
 header .header .right-header .my-user .menu-user {
@@ -301,30 +302,35 @@ header .header .right-header .my-user .menu-user ul li a {
   margin-top: 15px;
 }
 
-.menu-mobile .user-menu-mobile{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.menu-mobile .user-menu-mobile {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.bg-menu-mobile{
-    width: 100vw;
-    height: 100vh;
-    z-index: 99;
-    display: none;
-    background: rgba(0,0,0,0.1);
+.bg-menu-mobile {
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  display: none;
+  /* background: rgba(0, 0, 0, 0.1); */
+  /* background-color: transparent!important; */
 }
 
-.show-bg-menu-mobile{
-    display: block;
+.show-bg-menu-mobile {
+  display: block;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background:  rgba(0, 0, 0, 0.1); */
 }
 /* End menu mobile */
 
 /* responsive  */
 @media (max-width: 1092px) {
-
   header .header .right-header {
     display: none;
   }

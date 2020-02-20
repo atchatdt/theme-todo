@@ -2,8 +2,8 @@ const iMenuMobile = document.getElementById('iMenuMobile');
 const menuMobile =  document.getElementById('menu-mobile')
 const bgMenuMobile = document.getElementById('bg-menu-mobile');
 iMenuMobile.addEventListener('click',()=>{
-    menuMobile.classList.add('show-menu-mobile')
-    bgMenuMobile.classList.add('show-bg-menu-mobile')
+    menuMobile.classList.toggle('show-menu-mobile')
+    bgMenuMobile.classList.toggle('show-bg-menu-mobile')
 })
 
 bgMenuMobile.addEventListener('click',()=>{
