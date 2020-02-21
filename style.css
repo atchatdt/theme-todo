@@ -47,6 +47,7 @@ ul {
 header {
   width: 100%;
   background: #026aa7;
+  z-index: 100;
 }
 
 header .header {
@@ -195,6 +196,7 @@ header .header .right-header .my-user .menu-user ul li a {
   font-size: 20px;
   margin: auto;
   margin-top: 10px;
+  height: 100vh;
 }
 
 .main-todo .cart-todo {
@@ -234,7 +236,7 @@ header .header .right-header .my-user .menu-user ul li a {
   color: var(--add);
 }
 .main-todo .title {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -249,12 +251,20 @@ header .header .right-header .my-user .menu-user ul li a {
   color: var(--final);
 }
 
+.main-todo .cart-todo-title {
+  padding: 10px;
+}
 .main-todo .cart-todo {
   text-align: center;
   cursor: pointer;
   border-radius: 3px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  transition: all;
 }
+
+/* .main-todo .cart-todo-move{
+  background-color: blue!important;
+} */
 
 /* End main */
 
@@ -269,6 +279,7 @@ header .header .right-header .my-user .menu-user ul li a {
   height: 100%;
   position: fixed;
   z-index: 1000;
+  transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 0.72);
 }
 
 .menu-mobile .header-menu-mobile {
@@ -315,8 +326,6 @@ header .header .right-header .my-user .menu-user ul li a {
   height: 100vh;
   z-index: 99;
   display: none;
-  /* background: rgba(0, 0, 0, 0.1); */
-  /* background-color: transparent!important; */
 }
 
 .show-bg-menu-mobile {

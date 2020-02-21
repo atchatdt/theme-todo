@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -78,55 +77,67 @@
     <section class="__main-todo">
       <div class="container">
         <div class="main-todo">
-          <div class="todo-add">
+          <div class="todo todo-add" data-index="0"  draggable = "true">
             <div class="title title-add">
               <span>Thêm mới</span>
               <i class="fas fa-plus-circle"></i>
             </div>
-            <div class="cart-todo">
+            <div class="cart-todo "  draggable = "true" data-cart-todo-index="0">
               <div class="cart-todo-title">
-                Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. 0
+              </div>
+
+            </div>
+            <div class="cart-todo"  draggable = "true" data-cart-todo-index="1">
+              <div class="cart-todo-title">
+                Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. 1
+              </div>
+
+            </div>
+            <div class="cart-todo"  draggable = "true" data-cart-todo-index="2">
+              <div class="cart-todo-title">
+                Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. 2
               </div>
 
             </div>
           </div>
-          <div class="todo-doing">
+          <div class="todo todo-doing" data-index="1"  draggable = "true">
             <div class="title title-doing">
               <span>Đang làm</span>
               <i class="fas fa-wrench"></i>
             </div>
-            <div class="cart-todo">
-              <div class="cart-todo-title">Title</div>
+            <div class="cart-todo"  draggable = "true" data-cart-todo-index="3">
+              <div class="cart-todo-title">Title 3</div>
             </div>
-            <div class="cart-todo">
-              <div class="cart-todo-title">Title</div>
+            <div class="cart-todo"  draggable = "true" data-cart-todo-index="4">
+              <div class="cart-todo-title">Title 4</div>
             </div>
           </div>
-          <div class="todo-report">
+          <div class="todo todo-report" data-index="2"  draggable = "true">
             <div class="title title-report">
               <span>Kiểm tra</span>
               <i class="fas fa-exclamation-circle"></i>
             </div>
-            <div class="cart-todo">
-              <div class="cart-todo-title">Title</div>
+            <div class="cart-todo"  draggable = "true" data-cart-todo-index="5">
+              <div class="cart-todo-title">Title 5</div>
             </div>
-            <div class="cart-todo">
-              <div class="cart-todo-title">Title</div>
+            <div class="cart-todo"  draggable = "true" data-cart-todo-index="6">
+              <div class="cart-todo-title">Title 6</div>
             </div>
-            <div class="cart-todo">
-              <div class="cart-todo-title">Title</div>
+            <div class="cart-todo"  draggable = "true" data-cart-todo-index="7">
+              <div class="cart-todo-title">Title 7</div>
             </div>
           </div>
-          <div class="todo-final">
+          <div class="todo todo-final" data-index="3"  draggable = "true">
             <div class="title title-final">
               <span>Hoàn thành</span>
               <i class="fas fa-stamp"></i>
             </div>
-            <div class="cart-todo">
-              <div class="cart-todo-title">Title</div>
+            <div class="cart-todo" data-cart-todo-index="8">
+              <div class="cart-todo-title"  draggable = "true">Title 8</div>
             </div>
-            <div class="cart-todo">
-              <div class="cart-todo-title">Title</div>
+            <div class="cart-todo" data-cart-todo-index="9">
+              <div class="cart-todo-title"  draggable = "true">Title 9</div>
             </div>
           </div>
         </div>
