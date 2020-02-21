@@ -3,6 +3,9 @@ const menuMobile = document.getElementById("menu-mobile");
 const bgMenuMobile = document.getElementById("bg-menu-mobile");
 const allTodoCart = document.querySelectorAll(".cart-todo");
 const allToDo = document.querySelectorAll(".todo");
+const addItemTodo = document.getElementById("add-item-todo");
+const todoModalAdd = document.getElementById("todo-add-modal");
+const bgModal = document.querySelector(".__bg-modal");
 
 // Sự kiện kéo thả
 let dragStartIndex;
@@ -63,11 +66,8 @@ function dragDropItem() {
   changeLocationCartTodoItem(dragStartItem, dragEndItem);
 }
 
-function dragEnterItem() {
- 
-}
-function dragLeaveItem() {
-}
+function dragEnterItem() {}
+function dragLeaveItem() {}
 
 function addEventListeners() {
   allToDo.forEach(item => {
@@ -87,5 +87,19 @@ function addEventListeners() {
 }
 
 addEventListeners();
-
 // Kết thúc sự kiện kéo thả
+
+// Thêm mới
+
+function addTodoModal(e) {
+  console.log("add todo");
+  todoModalAdd.classList.add("show");
+  bgModal.classList.add("show");
+}
+
+addItemTodo.addEventListener("click", addTodoModal);
+bgModal.addEventListener("click", () => {
+  todoModalAdd.classList.remove("show");
+  bgModal.classList.remove("show");
+});
+// Hết thêm mới

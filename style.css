@@ -268,6 +268,80 @@ header .header .right-header .my-user .menu-user ul li a {
 
 /* End main */
 
+/* Modal add*/
+
+.todo-add-modal {
+  display: none !important;
+
+  display: flex;
+  color: var(--add);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 2s ease;
+}
+
+.todo-add-modal .modal-body {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+}
+
+.todo-add-modal .modal-from-add {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+}
+
+.todo-add-modal .modal-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form-group input {
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  font-size: 2rem;
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+.form-group input[type="submit"] {
+  background: #007bff;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  font-size: 1.5rem;
+}
+
+.show {
+  display: block !important;
+}
+
+.__bg-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background: #1d1d1dc9;
+  display: none;
+}
+/* End modal add */
+
 /* Menu mobile */
 
 .menu-mobile {
