@@ -92,7 +92,6 @@ addEventListeners();
 // Thêm mới
 
 function addTodoModal(e) {
-  console.log("add todo");
   todoModalAdd.classList.add("show");
   bgModal.classList.add("show");
 }
