@@ -6,6 +6,9 @@ const allToDo = document.querySelectorAll(".todo");
 const addItemTodo = document.getElementById("add-item-todo");
 const todoModalAdd = document.getElementById("todo-add-modal");
 const bgModal = document.querySelector(".__bg-modal");
+const formModalAdd = document.getElementById("modal-from-add");
+const titleTodoAdd = document.getElementById("title-todo-add");
+const contentTodoAdd = document.getElementById("content-todo-add");
 
 // Sự kiện kéo thả
 let dragStartIndex;
@@ -102,3 +105,14 @@ bgModal.addEventListener("click", () => {
   bgModal.classList.remove("show");
 });
 // Hết thêm mới
+formModalAdd.addEventListener("submit", e => {
+  e.preventDefault();
+  let title = titleTodoAdd.value;
+  let content = contentTodoAdd.value;
+
+  console.log({title,content});
+
+  console.log(allTodoCart.length)
+
+  // formModalAdd.submit()
+});
