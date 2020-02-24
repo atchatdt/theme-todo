@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 :root {
   --add: #399449;
   --doing: #e25555;
@@ -11,7 +12,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto' ,Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
   max-width: 100%;
   max-height: 100vh;
@@ -272,12 +273,12 @@ header .header .right-header .my-user .menu-user ul li a {
 
 .todo-add-modal {
   display: none !important;
-
   display: flex;
   color: var(--add);
   font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   transition: all 2s ease;
+  z-index: 100;
 }
 
 .todo-add-modal .modal-body {

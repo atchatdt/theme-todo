@@ -37,6 +37,7 @@ function changeLocationCartTodoItem(start, end) {
   let temp = start;
   start = end;
   end = temp;
+  console.log('change item')
 }
 
 function dragOver(e) {
@@ -110,9 +111,9 @@ formModalAdd.addEventListener("submit", e => {
   let title = titleTodoAdd.value;
   let content = contentTodoAdd.value;
 
-  console.log({title,content});
+  console.log({ title, content });
 
-  console.log(allTodoCart.length)
+  console.log(allTodoCart.length);
 
   // formModalAdd.submit()
 });
