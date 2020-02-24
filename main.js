@@ -3,12 +3,18 @@ const menuMobile = document.getElementById("menu-mobile");
 const bgMenuMobile = document.getElementById("bg-menu-mobile");
 const allTodoCart = document.querySelectorAll(".cart-todo");
 const allToDo = document.querySelectorAll(".todo");
-const addItemTodo = document.getElementById("add-item-todo");
+// const addItemTodo = document.getElementById("add-item-todo");
 const todoModalAdd = document.getElementById("todo-add-modal");
 const bgModal = document.querySelector(".__bg-modal");
 const formModalAdd = document.getElementById("modal-from-add");
-const titleTodoAdd = document.getElementById("title-todo-add");
-const contentTodoAdd = document.getElementById("content-todo-add");
+const titleTodoAdd = document.getElementById("title-todo");
+const contentTodoAdd = document.getElementById("todo-content");
+const allBtnEdit = document.querySelectorAll(".fas.fa-edit");
+const allCartTodoTitle = document.querySelectorAll(".cart-todo-title");
+const toggleFormEdit = document.getElementById("todo-edit-modal");
+const titleEdit = document.getElementById("title-todo-edit");
+const contentEdit = document.getElementById("todo-content-edit");
+const formEdit = document.getElementById("modal-from-edit");
 
 // Sự kiện kéo thả
 let dragStartIndex;
@@ -37,7 +43,6 @@ function changeLocationCartTodoItem(start, end) {
   let temp = start;
   start = end;
   end = temp;
-  console.log('change item')
 }
 
 function dragOver(e) {
@@ -95,15 +100,20 @@ addEventListeners();
 
 // Thêm mới
 
+document
+  .querySelector(".title.title-add")
+  .addEventListener("click", addTodoModal);
+
 function addTodoModal(e) {
   todoModalAdd.classList.add("show");
   bgModal.classList.add("show");
 }
 
-addItemTodo.addEventListener("click", addTodoModal);
+// addItemTodo.addEventListener("click", addTodoModal);
 bgModal.addEventListener("click", () => {
   todoModalAdd.classList.remove("show");
   bgModal.classList.remove("show");
+  toggleFormEdit.classList.remove("show");
 });
 // Hết thêm mới
 formModalAdd.addEventListener("submit", e => {
@@ -111,9 +121,32 @@ formModalAdd.addEventListener("submit", e => {
   let title = titleTodoAdd.value;
   let content = contentTodoAdd.value;
 
-  console.log({ title, content });
+  formModalAdd.submit()
+  // console.log({ title, content });
 
-  console.log(allTodoCart.length);
+  // console.log(allTodoCart.length);
+});
 
-  // formModalAdd.submit()
+function handleEdit() {
+  let currentParent = this.parentElement;
+  let content = currentParent.getAttribute("data-content");
+  let id = currentParent.getAttribute("data-id");
+  let index = currentParent.getAttribute("data-cart-todo-index");
+  let title = currentParent.getAttribute("data-title");
+  titleEdit.value = title;
+  contentEdit.value = content;
+  bgModal.classList.add("show");
+  toggleFormEdit.classList.add("show");
+  console.log({ content, id, index });
+}
+
+allBtnEdit.forEach(item => item.addEventListener("click", handleEdit));
+
+let arrAllTodo = Array.from(allCartTodoTitle);
+
+arrAllTodo.forEach(item => item.addEventListener("dblclick", handleEdit));
+
+formEdit.addEventListener("submit", e => {
+  e.preventDefault();
+  formEdit.submit();
 });

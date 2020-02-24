@@ -83,23 +83,17 @@
               <span>Thêm mới</span>
               <i class="fas fa-plus-circle" id="add-item-todo"></i>
             </div>
-            <div class="cart-todo " draggable="true" data-cart-todo-index="0">
-              <div class="cart-todo-title">
-                Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. 0
-              </div>
-
+            <div class="cart-todo " draggable="true" data-cart-todo-index="0" data-title="0" data-content="Lorem ipsum dolor sit amet. 0" data-id="0">
+              <div class="cart-todo-title"> 0</div>
+              <i class="fas fa-edit"></i>
             </div>
-            <div class="cart-todo" draggable="true" data-cart-todo-index="1">
-              <div class="cart-todo-title">
-                Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. 1
-              </div>
-
+            <div class="cart-todo" draggable="true" data-cart-todo-index="1" data-title="1" data-content="Lorem ipsum dolor sit amet. 1" data-id="1">
+              <div class="cart-todo-title">1</div>
+              <i class="fas fa-edit"></i>
             </div>
-            <div class="cart-todo" draggable="true" data-cart-todo-index="2">
-              <div class="cart-todo-title">
-                Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. 2
-              </div>
-
+            <div class="cart-todo" draggable="true" data-cart-todo-index="2" data-title="2" data-content="Lorem ipsum dolor sit amet. 2" data-id="2">
+              <div class="cart-todo-title"> 2</div>
+              <i class="fas fa-edit"></i>
             </div>
           </div>
           <div class="todo todo-doing" data-index="1" draggable="true">
@@ -107,11 +101,17 @@
               <span>Đang làm</span>
               <i class="fas fa-wrench"></i>
             </div>
-            <div class="cart-todo" draggable="true" data-cart-todo-index="3">
-              <div class="cart-todo-title">Title 3</div>
+            <div class="cart-todo" draggable="true" data-cart-todo-index="3" data-title="3" data-content="Lorem ipsum dolor sit amet. 3" data-id="3">
+              <div class="cart-todo-title"> 3</div>
+              <i class="fas fa-edit"></i>
             </div>
-            <div class="cart-todo" draggable="true" data-cart-todo-index="4">
-              <div class="cart-todo-title">Title 4</div>
+            <div class="cart-todo" draggable="true" data-cart-todo-index="4" data-title="4" data-content="Lorem ipsum dolor sit amet. 4" data-id="4">
+              <div class="cart-todo-title"> 4</div>
+              <i class="fas fa-edit"></i>
+            </div>
+            <div class="cart-todo" draggable="true" data-cart-todo-index="5" data-title="5" data-content="Lorem ipsum dolor sit amet. 5" data-id="5">
+              <div class="cart-todo-title"> 5</div>
+              <i class="fas fa-edit"></i>
             </div>
           </div>
           <div class="todo todo-report" data-index="2" draggable="true">
@@ -119,14 +119,18 @@
               <span>Kiểm tra</span>
               <i class="fas fa-exclamation-circle"></i>
             </div>
-            <div class="cart-todo" draggable="true" data-cart-todo-index="5">
-              <div class="cart-todo-title">Title 5</div>
+            
+            <div class="cart-todo" draggable="true" data-cart-todo-index="6" data-title="6" data-content="Lorem ipsum dolor sit amet. 6" data-id="6">
+              <div class="cart-todo-title"> 6</div>
+              <i class="fas fa-edit"></i>
             </div>
-            <div class="cart-todo" draggable="true" data-cart-todo-index="6">
-              <div class="cart-todo-title">Title 6</div>
+            <div class="cart-todo" draggable="true" data-cart-todo-index="7" data-title="7" data-content="Lorem ipsum dolor sit amet. 7" data-id="7">
+              <div class="cart-todo-title"> 7</div>
+              <i class="fas fa-edit"></i>
             </div>
-            <div class="cart-todo" draggable="true" data-cart-todo-index="7">
-              <div class="cart-todo-title">Title 7</div>
+             <div class="cart-todo" draggable="true" data-cart-todo-index="8" data-title="8" data-content="Lorem ipsum dolor sit amet. 8" data-id="8">
+              <div class="cart-todo-title" draggable="true"> 8</div>
+              <i class="fas fa-edit"></i>
             </div>
           </div>
           <div class="todo todo-final" data-index="3" draggable="true">
@@ -134,28 +138,35 @@
               <span>Hoàn thành</span>
               <i class="fas fa-stamp"></i>
             </div>
-            <div class="cart-todo" data-cart-todo-index="8">
-              <div class="cart-todo-title" draggable="true">Title 8</div>
+           
+            <div class="cart-todo" draggable="true" data-cart-todo-index="9" data-title="9" data-content="Lorem ipsum dolor sit amet. 9" data-id="9">
+              <div class="cart-todo-title" draggable="true"> 9</div>
+              <i class="fas fa-edit"></i>
             </div>
-            <div class="cart-todo" data-cart-todo-index="9">
-              <div class="cart-todo-title" draggable="true">Title 9</div>
+            <div class="cart-todo" draggable="true" data-cart-todo-index="10" data-title="10" data-content="Lorem ipsum dolor sit amet. 10" data-id="10">
+              <div class="cart-todo-title" draggable="true"> 10</div>
+              <i class="fas fa-edit"></i>
+            </div>
+            <div class="cart-todo" draggable="true" data-cart-todo-index="11" data-title="11" data-content="Lorem ipsum dolor sit amet. 11" data-id="11">
+              <div class="cart-todo-title" draggable="true"> 11 </div>
+              <i class="fas fa-edit"></i>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="todo-add-modal" id="todo-add-modal">
+    <div class="todo-modal" id="todo-add-modal">
       <div class="main-modal">
         <div class="modal-body">
           <div class="modal-title">Thêm</div>
-          <form action="" class="modal-from-add" id="modal-from-add">
+          <form action="" class="modal-from" id="modal-from-add">
             <div class="form-group">
-              <label for="title-todo-add">Tiêu đề</label>
-              <input type="text" id="title-todo-add" required>
+              <label for="title-todo">Tiêu đề</label>
+              <input type="text" id="title-todo" required>
             </div>
             <div class="form-group">
-              <label for="content-todo-add">Nội dung</label>
-              <textarea name="" id="content-todo-add"></textarea>
+              <label for="todo-content">Nội dung</label>
+              <textarea name="" id="todo-content"></textarea>
             </div>
             <div class="form-group">
               <input type="submit" value="Xác nhận">
@@ -165,6 +176,28 @@
       </div>
     </div>
     <div class="__bg-modal"></div>
+
+    <!-- Edit -->
+    <div class="todo-modal" id="todo-edit-modal">
+      <div class="main-modal">
+        <div class="modal-body">
+          <div class="modal-title">Thêm</div>
+          <form action="" class="modal-from" id="modal-from-edit">
+            <div class="form-group">
+              <label for="title-todo-edit">Tiêu đề</label>
+              <input type="text" id="title-todo-edit" required value="">
+            </div>
+            <div class="form-group">
+              <label for="todo-content-edit">Nội dung</label>
+              <textarea name="" id="todo-content-edit" value="2 "></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Xác nhận">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="main.js"></script>
 </body>

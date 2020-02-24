@@ -235,6 +235,7 @@ header .header .right-header .my-user .menu-user ul li a {
 
 .main-todo .title-add {
   color: var(--add);
+  cursor: pointer;
 }
 .main-todo .title {
   margin-bottom: 10px;
@@ -254,6 +255,8 @@ header .header .right-header .my-user .menu-user ul li a {
 
 .main-todo .cart-todo-title {
   padding: 10px;
+  width: 100%;
+  display: block;
 }
 .main-todo .cart-todo {
   text-align: center;
@@ -261,6 +264,10 @@ header .header .right-header .my-user .menu-user ul li a {
   border-radius: 3px;
   font-size: 1.2rem;
   transition: all;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  justify-items: center;
+  align-items: center;
 }
 
 /* .main-todo .cart-todo-move{
@@ -271,7 +278,7 @@ header .header .right-header .my-user .menu-user ul li a {
 
 /* Modal add*/
 
-.todo-add-modal {
+.todo-modal {
   display: none !important;
   display: flex;
   color: var(--add);
@@ -281,7 +288,7 @@ header .header .right-header .my-user .menu-user ul li a {
   z-index: 100;
 }
 
-.todo-add-modal .modal-body {
+.todo-modal .modal-body {
   position: fixed;
   top: 40%;
   left: 50%;
@@ -289,14 +296,14 @@ header .header .right-header .my-user .menu-user ul li a {
   transform: translate(-50%, -50%);
 }
 
-.todo-add-modal .modal-from-add {
+.todo-modal .modal-from {
   display: flex;
   flex-direction: column;
   width: 500px;
   height: auto;
 }
 
-.todo-add-modal .modal-title {
+.todo-modal .modal-title {
   display: block;
   width: 100%;
   text-align: center;
