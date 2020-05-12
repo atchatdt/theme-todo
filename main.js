@@ -21,6 +21,8 @@ let dragStartIndex;
 let dragStartItem;
 let dragEndItem;
 
+
+// Xử lý menu mobile
 iMenuMobile.addEventListener("click", () => {
   menuMobile.classList.toggle("show-menu-mobile");
   bgMenuMobile.classList.toggle("show-bg-menu-mobile");
@@ -31,6 +33,7 @@ bgMenuMobile.addEventListener("click", () => {
   bgMenuMobile.classList.remove("show-bg-menu-mobile");
 });
 
+// Xử lý phần duy chuyển
 function changeLocationCartTodo(start, end) {
   try {
     const itemStart = allToDo[start];
@@ -39,6 +42,7 @@ function changeLocationCartTodo(start, end) {
     itemEnd.appendChild(dragStartItem);
   } catch (err) {}
 }
+
 function changeLocationCartTodoItem(start, end) {
   let temp = start;
   start = end;

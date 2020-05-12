@@ -14,6 +14,8 @@
 
 <body>
   <div class="container-fluid">
+
+    <!-- Header -->
     <header>
       <div class="container">
         <div class="header">
@@ -54,6 +56,8 @@
           <div class="i-menu-mobile"><i class="fas fa-bars" id="iMenuMobile"></i></div>
         </div>
     </header>
+
+    <!-- Menu mobile -->
     <nav class="menu-mobile" id="menu-mobile">
       <div class="header-menu-mobile">
         <div class="title-menu-mobile">Todo</div>
@@ -74,10 +78,13 @@
         <div class="user-login-menu-mobile">Đăng xuất</div>
       </div>
     </nav>
+
+    <!-- Phần công việc chính -->
     <div class="bg-menu-mobile" id="bg-menu-mobile"></div>
     <section class="__main-todo">
       <div class="container">
         <div class="main-todo">
+          <!-- Thêm mới -->
           <div class="todo todo-add" data-index="0" draggable="true">
             <div class="title title-add">
               <span>Thêm mới</span>
@@ -96,6 +103,7 @@
               <i class="fas fa-edit"></i>
             </div>
           </div>
+          <!-- Đang làm -->
           <div class="todo todo-doing" data-index="1" draggable="true">
             <div class="title title-doing">
               <span>Đang làm</span>
@@ -114,6 +122,7 @@
               <i class="fas fa-edit"></i>
             </div>
           </div>
+          <!-- Chờ duyệt -->
           <div class="todo todo-report" data-index="2" draggable="true">
             <div class="title title-report">
               <span>Kiểm tra</span>
@@ -133,6 +142,7 @@
               <i class="fas fa-edit"></i>
             </div>
           </div>
+          <!-- Công việc hoàn thành -->
           <div class="todo todo-final" data-index="3" draggable="true">
             <div class="title title-final">
               <span>Hoàn thành</span>
@@ -156,7 +166,7 @@
       </div>
     </section>
 
-    <!-- Add -->
+    <!-- Add( Phần thêm) -->
     <div class="todo-modal" id="todo-add-modal">
       <div class="main-modal">
         <div class="modal-body">
@@ -179,7 +189,7 @@
     </div>
     <div class="__bg-modal"></div>
 
-    <!-- Edit -->
+    <!-- Edit( Phần sửa) -->
     <div class="todo-modal" id="todo-edit-modal">
       <div class="main-modal">
         <div class="modal-body">
